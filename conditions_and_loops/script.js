@@ -4,22 +4,22 @@ let b = -1;
 let c = 4;
 
 let sort;
-if(a >= b && a >= c){
-    if(b >= c){
+if(a <= b && a <= c){
+    if(b <= c){
     sort = [a,b,c];
 }else{
     sort = [a,c,b];
 }
 
-}else if (b >= a && b >= c){
-    if(a >= c){
+}else if (b <= a && b <= c){
+    if(a <= c){
         sort = [b, a, c];
     }else{
         sort = [b, c, a];
 }
 
 }else{
-if(a >= b){
+if(a <= b){
     sort = [c, a, b]
 }else{
     sort = [c, b, a];
